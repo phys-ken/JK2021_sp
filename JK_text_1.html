@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JK_text_1.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+      ]
+    });
+  });
+</script>
+</head>
+<body>
+<!-- 
+theme: gaia
+size: 4:3
+paginate: true
+style: |
+  section {
+    background-color: #FFFFFF;
+    font-family: 'Yu Gothic UI';
+    color: black;
+  }
+-->
+<!-- headingDivider: 2 -->
+<!-- _class: lead -->
+<h1 id="%E7%94%9F%E5%BE%92%E3%81%AE%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3%E3%82%92%E6%B8%AC%E5%AE%9A%E6%A9%9F%E3%81%A8%E3%81%97%E3%81%A6%E4%BD%BF%E3%81%86">生徒のスマートフォンを測定機として使う</h1>
+<h2 id="%E3%81%AA%E3%81%9C%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3%E3%82%92%E6%B8%AC%E5%AE%9A%E6%A9%9F%E3%81%A8%E3%81%97%E3%81%A6%E4%BD%BF%E3%81%86%E3%81%8B">なぜスマートフォンを測定機として使うか。</h2>
+<ul>
+<li>スマートフォンを測定機として使えば、個別に実験ができる</li>
+<li>普段から手元にある機器なので、日常の場面でも「このアプリ使ってみよう」と思い、物理量の測定をしてみようと思えるかもしれない。</li>
+<li>スマートフォンになぜその測定器が付いているか考える活動も考えられる。
+<ul>
+<li>ジャイロセンサーでは、スマホの向き(縦か横か)を検知している、気圧センサーでは、高度を測定している</li>
+</ul>
+</li>
+</ul>
+<h2 id="%E7%B4%B9%E4%BB%8B%E3%81%99%E3%82%8B%E3%82%A2%E3%83%97%E3%83%AAphyphox">紹介するアプリ：Phyphox</h2>
+<p><img src="./figs/phyphox.png" alt="画像"></p>
+<h3 id="%E4%BB%96%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AB%E6%AF%94%E3%81%B9%E3%81%A6%E8%89%AF%E3%81%84%E3%81%A8%E3%81%93%E3%82%8D">他のアプリに比べて良いところ</h3>
+<ul>
+<li>iphone , androidどちらでも、同じ操作感で使える</li>
+<li>iphone版は、日本語対応(Androidは要確認)</li>
+<li>不適切な広告がついていない(2021/8/20現在)
+<ul>
+<li>騒音計アプリやファンクションジェネレータなの機能がある無料アプリもあるが、学習の場面で生徒に使わせるには適切とは言えない広告(マンガ、ゲーム、アダルトなど)が表示される場合がある。</li>
+</ul>
+</li>
+<li>一つのアプリケーションに、多くの機能がついている
+<ul>
+<li>１機能１アプリだと、生徒のスマートフォンに多くのアプリをインストールさせなくてはならない。学校から貸与しているのでなければ、スマートフォンのストレージ容量はさまざまで、学校から多くのアプリをインストールさせるのは避けたい。
+<ul>
+<li>Gsuite を本格導入している学校では、生徒のスマホにすでにGoogle Classroom、Google Drive、Gmail、Google Calendarなどたくさんのアプリのインストールを指示しているはず。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ネット環境があれば、アプリ上で実験の説明や動画(Youtubeに移動)をみることができる。</li>
+</ul>
+<h2 id="%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%AE%E3%83%AA%E3%83%B3%E3%82%AF">ダウンロードのリンク</h2>
+<h3 id="google-play">Google play :</h3>
+<p>https://play.google.com/store/apps/details?id=de.rwth_aachen.phyphox&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1</p>
+<h3 id="apple-store">Apple Store:</h3>
+<p>https://apps.apple.com/jp/app/phyphox/id1127319693</p>
+<h2 id="%E5%85%B7%E4%BD%93%E4%BE%8B">具体例</h2>
+<h3 id="%E9%9F%B3%E9%80%9F%E3%81%AE%E6%B8%AC%E5%AE%9A">音速の測定</h3>
+<p><img src="./figs/1onsoku.gif" alt="onsoku"></p>
+<ul>
+<li>音響ストップウォッチ
+<ul>
+<li>音量が閾値を超えるとタイマーがスタート・ストップする。</li>
+</ul>
+</li>
+</ul>
+<h3 id="v-t%E3%82%B0%E3%83%A9%E3%83%95">v-tグラフ</h3>
+<p><img src="./figs/2keikyu.svg" alt="onsoku"></p>
+<ul>
+<li>加速度センサーを起動したまま電車に乗る</li>
+<li>データをエクスポートし、積分すると比較的綺麗なv-tグラフが得られる。</li>
+</ul>
+<h3 id="%E6%B0%97%E5%9C%A7%E8%A8%88">気圧計</h3>
+<h3 id="%E3%82%B9%E3%83%9A%E3%82%AF%E3%83%88%E3%83%A9%E3%83%A0%E3%82%A2%E3%83%8A%E3%83%A9%E3%82%A4%E3%82%B6%E3%83%BC">スペクトラムアナライザー</h3>
+<h2 id="%E6%B3%A8%E6%84%8F%E7%82%B9">注意点</h2>
+<ul>
+<li>センサーの感度や出力の大きさは機種によって違う。</li>
+<li>心理的校正(後で追記します、科学をどう教えるかに書いてある、センサーの値が直感と合っていることを生徒自身が自覚する必要がある)の必要があるので、いきなり実験を行うのではなく、簡単な活動を通してセンサーの仕組みを伝えてからの方が良い</li>
+<li>充電や通信量には気を使ってあげたい。
+<ul>
+<li>学校で充電をしてはいけないという学校もあるかもしれない。ただ、物理実験室はコンセントが多くあるはずなので、学校に許可をとって、実験の前の時間に「次回の授業ではスマホを20分くらい使う、物理室の中でのみ充電を認めるので、充電器を持ってくるように」と伝えれば、トラブルは減ると思う。</li>
+<li>個人的には、一人一台とかなんとか言ってんだし学校でのスマホの充電は認めるべきだと思います。帰り道を調べたり、スマホを定期券に使っていたり、家庭との連絡のツールになっているので…。(カットします)</li>
+</ul>
+</li>
+<li>普段から、データの見方に関する指導は必要。特にデジタル測定やグラフでの表現だと、授業者にとっては「大体同じ」と感じるような差でも学習者は「変化した」と感じることも多い。</li>
+</ul>
+<h1 id="phet%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E4%B8%8A%E3%81%A7%E3%81%AE%E7%94%9F%E5%BE%92%E5%AE%9F%E9%A8%93">Phetを使ったシミュレーション上での生徒実験</h1>
+<h2 id="%E3%81%AA%E3%81%9Cphet%E3%82%92%E7%B4%B9%E4%BB%8B%E3%81%99%E3%82%8B%E3%81%8B">なぜPhetを紹介するか</h2>
+<ul>
+<li>シミュレーションだけでOKと言いたいわけではない。実物を使った実験と組み合わせることで、効果がより大きくなる。</li>
+<li>シミュレーションを使えば、摩擦を無視、跳ね返り係数１など、理想的な状況を表現できたり、パラメータの変更が容易にできたりする。</li>
+<li>さまざまな表現を切り替えられる。(あまり提示しすぎても生徒を混乱させるだけになることもあるので、演示で示す際に参考にするのがよい。)</li>
+</ul>
+<h2 id="%E5%AE%9F%E8%B7%B5%E4%BE%8B1">実践例1</h2>
+<ul>
+<li>波：ウェーブマシーンの代わりになる、スロー再生、一時停止ができる。反射の効果を無視することができる
+<img src="./figs/1gen.gif" alt="gif"></li>
+</ul>
+<h2 id="%E5%AE%9F%E8%B7%B5%E4%BE%8B2">実践例2</h2>
+<ul>
+<li>運動量：多くのパラメータを変えながら、定量的な観察ができる
+<img src="./figs/2mom.gif" alt="gif"></li>
+</ul>
+<h2 id="%E5%AE%9F%E8%B7%B5%E4%BE%8B3">実践例3</h2>
+<ul>
+<li>電場：場のイメージを持つことができる。
+<img src="./figs/3ele.gif" alt="gif"></li>
+</ul>
+<h2 id="%E6%B3%A8%E6%84%8F%E3%81%8C%E5%BF%85%E8%A6%81%E3%81%AA%E3%81%A8%E3%81%93%E3%82%8D">注意が必要なところ</h2>
+<ul>
+<li>普段の実験と同じで、目的意識を持たせながら扱う必要がある。なんとなくいじるだけでは、学びは少ない。
+<ul>
+<li>Phetのサイトに無料の会員登録をすると、世界での授業実践例を知ることができる。</li>
+</ul>
+</li>
+<li>スマートフォンでも使えるが、特に定量実験はできればタブレットなどの大きい画面でやりたい。</li>
+<li>通信量は少なくないため、校内Wifi等の１つのアクセスポイントに同時に40人が接続をすると、通信速度が遅くなる可能性がある。実際に使う前に、各校の環境で耐えられるか、事前にテストは必要である。</li>
+</ul>
+<style type="text/css">
+
+body {
+
+  counter-reset: number 0; /* number のカウンタを 0 にセット */
+
+}
+
+h1 {
+
+  position:relative; 
+  padding:5px 20px; 
+  font:bold  Arial, Helvetica, sans-serif; 
+  color:#333; 
+  background:#fff; 
+  text-shadow:
+
+    1px 1px 0 #fff,
+    2px 2px 0 #999;
+
+  border-top:#333 solid 3px; 
+  border-bottom:#333 solid 3px; 
+
+    background-image: -webkit-gradient(linear, left top, right bottom,
+      from(			rgba(255, 255, 255, 0.0)), 
+      color-stop(0.4, rgba(255, 255, 255, 0.0)), 
+      color-stop(0.4, rgba(0, 0, 0, 0.1)), 
+      color-stop(0.6, rgba(0, 0, 0, 0.1)), 
+      color-stop(0.6, rgba(255, 255, 255, 0.0)),
+      to(				rgba(255, 255, 255, 0.0))
+      );
+
+  background-image: -webkit-linear-gradient(top -45deg, 
+
+      transparent 40%,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.1) 60%,
+            transparent 60%
+      );
+
+  background-image: -moz-linear-gradient(top -45deg, 
+
+      transparent 40%,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.1) 60%,
+            transparent 60%
+      );
+
+  background-image: -o-linear-gradient(top -45deg, 
+
+      transparent 40%,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.1) 60%,
+            transparent 60%
+      );
+
+  background-image: linear-gradient(to bottom -45deg, 
+
+      transparent 40%,
+            rgba(0, 0, 0, 0.1) 40%,
+            rgba(0, 0, 0, 0.1) 60%,
+            transparent 60%
+      );
+
+  background-size:4px 4px; 
+
+}
+h1:before{
+
+  content:" "; 
+  position:absolute; 
+  top:100%; 
+  left:24px; 
+  width:0; 
+  height:0; 
+  border-width:12px; 
+  border-style:solid; 
+  border-color:transparent; 
+  border-top-color:#333; 
+
+}
+h1:after{
+
+  content:" "; 
+  position:absolute; 
+  top:100%; 
+  left:28px; 
+  width:0; 
+  height:0; 
+  border-width:8px; 
+  border-style:solid; 
+  border-color:transparent; 
+  border-top-color:#f0f0f0; 
+  z-index:1; 
+
+}
+
+h2:before {
+
+    counter-increment: number 1 ;
+
+content: counter(number) "."; 
+
+    height: 10px;
+    width: 40px;
+    left: 10px;
+    position: absolute;
+    top: 0px;
+
+}
+
+h2 {
+
+    padding-bottom: 0.1em;
+
+    position: relative;
+    padding-left: 90px;
+    margin-left: 10px;
+      padding: 0em 2em;/*上下 左右の余白*/
+
+  color: black; /*文字色*/
+  background: transparent; /*背景透明に*/
+  border-left: solid 5px black; /*左線*/
+}
+
+h3 {
+
+    text-decoration: underline;
+
+}
+
+.kousiki {
+
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px black;
+    border-radius: 8px;
+
+}
+.kousiki .box-title {
+
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: black;
+    font-weight: bold;
+
+}
+.kousiki p {
+
+    margin: 0; 
+    padding: 0;
+
+}
+
+</style>
+
+</body>
+</html>
