@@ -1,6 +1,6 @@
 ---
 
-marp: false
+marp: true
 header: Date
 footer: Myname
 
