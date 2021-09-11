@@ -1,0 +1,21 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="280px" height="282px" viewBox="-0.5 -0.5 280 282" content="&lt;mxfile&gt;&lt;diagram id=&quot;rCLF4zU0SLE_IiKmf290&quot; name=&quot;ページ1&quot;&gt;xVfJbtswEP0aHytYom3Jx9hJ20OKBvCh7amgJVoiQokCRW/9+g7FRWtiBxXQBAg0j8Mh570hOZmhbX75InCZfeMJYbNgnlxm6HEWBCgM4K8CrhpYhXMNpIImGvIbYEf/EANatyNNSNVxlJwzScsuGPOiILHsYFgIfu66HTjrrlrilAyAXYzZEP1BE5lpNArCBv9KaJrZlf3VWo/k2DqbTKoMJ/zcgtDTDG0F51J/5ZctYYo7y4ue9/mNUbcxQQp5zwQjxAmzo8nN7EtebbInIiSF3J/xnrAXXlFJeQFDey4lz2doYx0eGE3VgOQloJnMGRg+fEKSpQqWX1JVDt4eVzT2RK3M5kAZ23LGBeT+WPCCqAlS8FdHbR1C1wBkgza0SHR2SzDM/mEL5PImB75jFiqS8JxIcQUXOwEZMUw1ujI7N9paKGvJ6kTEppxSF7phHD4M6eMCoNsCwAQobMXLOaOS7Eocq5EzcNnlGVelrvYDvZBkInIWXXL85ZCcaIScaAJuFre5kYLiImV3kCO4xKZyP4VTVc5y5UWLXvGsvXX7JxzQFYzQhSaga3WbLnsS4ytTp0ig27zt+RE8k+e9A3D8mgqFfj9KCEO6RzTyEPKDdRQFkR9MxfMqGPAcDusQjRC7mIDY8I4zWiQP6mFp7rAWhZCluP4EY+4trfmrPfao8pw762osvQpJBo9RjzfYCT+KmHTKQGKREkvCOLst6pYj1FlMEAYn59TdxBifZoUXTmF7jXhh9wZBYU8SvXkzq/1W9QK5g2MD9e9fnfIgUC2vS/suxdf/qPi9yv03TeZdKhf9++deTRC6EWg6TewT/J4opVqHiKcT0Fw13YdusdSRSnCVqaexNtotSt1x1H1II6hrTergaDlXv4CzXicUE7VoqxP6YKvE9T26dd2qWgQbFxe830Xxw4HGxDtWRFRezveUkd/KmObKDfqndrQpWg8rFJrdD9+4YDYtry6N5v8G9PQX&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="mx-gradient-none-0-none-0-s-0">
+            <stop offset="0%" style="stop-color:none;stop-opacity:0"/>
+            <stop offset="100%" style="stop-color:none;stop-opacity:0"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <path d="M 30 60 L 40 60 L 40 280 L 30 280 L 30 60 Z" fill="#ffffff" stroke="none" pointer-events="all"/>
+        <path d="M 30 60 L 30 280 L 30 280 L 40 280 L 40 60 L 30 60" fill="url(#mx-gradient-none-0-none-0-s-0)" stroke="none" pointer-events="all"/>
+        <path d="M 30 60 L 40 60 L 40 280 L 30 280 L 30 60 Z" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <ellipse cx="80" cy="40" rx="40" ry="40" fill="#ffffff" stroke="#000000" pointer-events="all"/>
+        <path d="M 56.84 70 L 76.84 85 L 56.84 100 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" transform="rotate(-75,66.84,85)" pointer-events="all"/>
+        <path d="M 62.84 128.33 C 62.84 123.73 69.56 120 77.84 120 C 81.82 120 85.63 120.88 88.45 122.44 C 91.26 124 92.84 126.12 92.84 128.33 L 92.84 151.67 C 92.84 156.27 86.12 160 77.84 160 C 69.56 160 62.84 156.27 62.84 151.67 Z" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 92.84 128.33 C 92.84 132.93 86.12 136.66 77.84 136.66 C 69.56 136.66 62.84 132.93 62.84 128.33" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 76.42 120 L 74.08 86.94" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 0 280 L 230 280" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="stroke"/>
+        <rect x="170" y="160" width="109" height="116" fill="none" stroke="none" pointer-events="all"/>
+        <path d="M 274.83 265.17 L 274.83 223.41 L 251.23 223.41 L 251.23 265.17 Z M 265.19 271.36 C 265.86 271.36 266.5 270.74 266.5 269.88 C 266.5 268.99 266.06 268.27 265.13 268.27 L 260.97 268.27 C 260.14 268.27 259.54 268.86 259.54 269.75 C 259.54 270.93 260.3 271.36 260.86 271.36 Z M 249.75 276 C 248.7 276 247.07 274.99 247.07 272.84 L 247.07 218.79 C 247.07 216.92 248.45 215.68 249.75 215.68 L 276.17 215.68 C 277.98 215.68 279 217.31 279 218.73 L 279 272.91 C 279 274.68 277.61 276 276.32 276 Z M 212.71 211.49 C 201.51 211.49 191.53 201.08 191.53 185.1 C 191.53 172.7 199.97 160 212.3 160 C 224.35 160 233.18 172.29 233.18 185.7 C 233.18 201.2 222.78 211.49 212.71 211.49 Z M 170 263.46 C 170.96 252.04 172.26 236.45 174.72 228.55 C 175.85 224.98 177.5 222.4 180.16 220.26 C 181.88 218.84 188.01 215.06 189.14 214.44 C 191.1 213.31 193.14 212.71 194.88 214.44 C 205.27 224.69 219.65 224.38 230.18 214.48 C 231.41 213.08 233.35 213.45 234.63 214.01 C 236.2 214.69 240.51 217.43 242.9 219.02 L 242.9 263.46 Z" fill="#505050" stroke="none" pointer-events="all"/>
+    </g>
+</svg>
