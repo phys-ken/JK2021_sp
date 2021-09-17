@@ -37,6 +37,7 @@ title: "APEJ_2021"
 ## 今日紹介したいもの
 * 音響ストップウォッチ
 * スペクトルアナライザー
+* 加速度計
 
 ---
 
@@ -69,7 +70,7 @@ $ h = \frac{1}{2} g \Delta{t}^2 $
 
 ![onsoku](./figs/onsoku_img.gif)
 
-$\Delta t_{A} - \Delta t_{B} = 2 \frac{d}{V} $
+$\Delta t_{A} - \Delta t_{B} =  \frac{2 d}{V} $
 
 [Messung der Schallgeschwindigkeit](https://www.leifiphysik.de/akustik/schallgeschwindigkeit/versuche/messung-der-schallgeschwindigkeit-smartphone-experiment-mit-phyphox)
 
@@ -96,16 +97,6 @@ $\Delta t_{A} - \Delta t_{B} = 2 \frac{d}{V} $
 * データをエクスポートし、積分すると比較的綺麗なv-tグラフが得られる。
 ![onsoku](./figs/2keikyu.svg)
 
----
-
-### 加速度計と気圧計
-
-#### エレベーターの$v-t$グラフ
-![elev](./figs/3ele2.gif)
-
-[Smartphone-Experiment: Speed of an Elevator (en)](https://www.youtube.com/watch?v=y-goBtfuXAM&t)
-
-
 
 ---
 
@@ -116,10 +107,20 @@ $\Delta t_{A} - \Delta t_{B} = 2 \frac{d}{V} $
 ## Phet
 ![phet](./figs/phet.png)
 
+
+---
+
+## 注意
+* スマートフォンからブラウザで検索してアクセスしてください。
+* アプリだと有料になります(120円)
+
+
 ---
 
 ## 実践例1
 *  波：ウェーブマシーンの代わりになる、スロー再生、一時停止ができる。反射の効果を無視することができる
+
+--
 
 ![gif](./figs/1gen.gif)
 
@@ -128,12 +129,16 @@ $\Delta t_{A} - \Delta t_{B} = 2 \frac{d}{V} $
 ## 実践例2
 * 運動量：多くのパラメータを変えながら、定量的な観察ができる
 
+--
+
 ![gif](./figs/2mom.gif)
 
 ---
 
 ## 実践例3
 * 電場：場のイメージを持つことができる。
+
+--
 
 ![gif](./figs/3ele.gif)
 
