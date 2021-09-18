@@ -2,9 +2,11 @@
 theme : "white"
 transition : "default"
 slideNumber: True
-title: "APEJ_2021"
+title: "スマホ実験班_2021"
 
 ---
+
+
 
 ### スライド版資料の閲覧の仕方
 * スライド版資料は[こちら](https://phys-ken.github.io/JK2021_sp/export/index.html)
@@ -59,9 +61,6 @@ title: "APEJ_2021"
 
 ---
 
-
-### 音響ストップウォッチ
-
 #### 【実践例】落下実験
 
 ![](./figs/rakka.drawio.svg)
@@ -77,10 +76,8 @@ $ h = \frac{1}{2} g \Delta{t}^2 $
 
 ---
 
-### 音響ストップウォッチ
 #### 【実践例】音速の測定
 
-* 2台のスマートフォンを使って実験します。
 
 ![onsoku](./figs/1onsoku.gif)
 
