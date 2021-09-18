@@ -78,35 +78,39 @@ $ h = \frac{1}{2} g \Delta{t}^2 $
 
 --
 
-## 軽く説明１
-
-<img src="./figs/onsoku_zu.drawio.svg" alt="図形が表示できません" border="0"
-width="300"  align="right" />
-
---
-
-<img src="./figs/onsoku_start_zu.drawio.svg" alt="図形が表示できません" border="0"
-width="300"  align="right" />
-
---
-
-
-
-<img src="./figs/onsoku_end_zu.drawio.svg" alt="図形が表示できません" border="0"
-width="300"  align="right" />
-
---
+### 概要1
 
 | anime                                                                       | fig                                                                                   |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| <img src="./figs/onsoku_img.gif" alt="図形が表示できません" border="0" width="300" /> | <img src="./figs/onsoku_fin_zu.drawio.svg" alt="図形が表示できません" border="0" width="300" /> |
+| <img src="./figs/onsoku_img.gif" alt="図形が表示できません" border="0" width="500" /> | <img src="./figs/onsoku_zu.drawio.svg" alt="図形が表示できません" border="0" width="300"  />|
+
+--
+
+### 概要2
+
+| anime                                                                       | fig                                                                                   |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| <img src="./figs/onsoku_start_zu.gif" alt="図形が表示できません" border="0" width="500" /> | <img src="./figs/onsoku_start_zu.drawio.svg" alt="図形が表示できません" border="0" width="300"  />
+|
+
+--
+
+### 概要3
+
+| anime                                                                       | fig                                                                                   |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| <img src="./figs/onsoku_end_zu.gif" alt="図形が表示できません" border="0" width="500" /> | <img src="./figs/onsoku_end_zu.drawio.svg" alt="図形が表示できません" border="0" width="300"  align="right" /> |
+
+--
+
+### まとめ 
+
+| anime                                                                       | fig                                                                                   |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| <img src="./figs/onsoku_full.gif" alt="図形が表示できません" border="0" width="500" /> | <img src="./figs/onsoku_fin_zu.drawio.svg" alt="図形が表示できません" border="0" width="300" /> |
 
 
-
-
-
-
-$\Delta t_{A} - \Delta t_{B} =  \frac{2 d}{V} $
+$$\Delta t_{A} - \Delta t_{B} =  \frac{2 d}{V} $$
 
 [Messung der Schallgeschwindigkeit](https://www.leifiphysik.de/akustik/schallgeschwindigkeit/versuche/messung-der-schallgeschwindigkeit-smartphone-experiment-mit-phyphox)
 
