@@ -11,10 +11,16 @@ title: "APEJ_2021"
 
 ---
 
-## 紹介するアプリ：Phyphox 
+## Phyphox 
 ![画像](./figs/phyphox.png)
 * スマートフォンにダウンロードして使うアプリケーションです。
 * タブレットには対応していない可能性もあります。
+
+---
+
+## スマートフォンのアプリとは
+* 一度ダウンロードすると、スマートフォン本体にアプリケーションが保存されるので、**ネットワーク環境がなくても**アプリの機能を利用できます(すべてではない)。
+* 生徒はスマホの操作には慣れている場合がほとんどだと思われます。授業で使用したい時は、「phyphoxというアプリをダウンロードしてきてね」と声をかけると、ダウンロードしてきてくれます。QRコードをつけて伝えると、より親切です。
 
 ---
 
@@ -26,11 +32,7 @@ title: "APEJ_2021"
 | :------------------------------------------------: | :------------------------------------------------: |
 | <img src="figs/phyphox_iphone.png"  height=300px >| <img src="figs/phyphox_and.png"  height=300px >|
 
----
 
-## スマートフォンのアプリとは
-* 一度ダウンロードすると、スマートフォン本体にアプリケーションが保存されるので、**ネットワーク環境がなくても**アプリの機能を利用できます(すべてではない)。
-* 生徒はスマホの操作には慣れている場合がほとんどだと思われます。授業で使用したい時は、「phyphoxというアプリをダウンロードしてきてね」と声をかけると、ダウンロードしてきてくれます。QRコードをつけて伝えると、より親切です。
 
 ---
 
@@ -68,17 +70,45 @@ $ h = \frac{1}{2} g \Delta{t}^2 $
 ### 音響ストップウォッチ
 #### 【実践例】音速の測定
 
-![onsoku](./figs/onsoku_img.gif)
-
-$\Delta t_{A} - \Delta t_{B} =  \frac{2 d}{V} $
-
-[Messung der Schallgeschwindigkeit](https://www.leifiphysik.de/akustik/schallgeschwindigkeit/versuche/messung-der-schallgeschwindigkeit-smartphone-experiment-mit-phyphox)
-
---
+* 2台のスマートフォンを使って実験します。
 
 ![onsoku](./figs/1onsoku.gif)
 
 [横浜物理サークル 2020/1/19](https://www2.hamajima.co.jp/~tenjin/ypc/ypc201.htm)
+
+--
+
+## 軽く説明１
+
+<img src="./figs/onsoku_zu.drawio.svg" alt="図形が表示できません" border="0"
+width="300"  align="right" />
+
+--
+
+<img src="./figs/onsoku_start_zu.drawio.svg" alt="図形が表示できません" border="0"
+width="300"  align="right" />
+
+--
+
+
+
+<img src="./figs/onsoku_end_zu.drawio.svg" alt="図形が表示できません" border="0"
+width="300"  align="right" />
+
+--
+
+| anime                                                                       | fig                                                                                   |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| <img src="./figs/onsoku_img.gif" alt="図形が表示できません" border="0" width="300" /> | <img src="./figs/onsoku_fin_zu.drawio.svg" alt="図形が表示できません" border="0" width="300" /> |
+
+
+
+
+
+
+$\Delta t_{A} - \Delta t_{B} =  \frac{2 d}{V} $
+
+[Messung der Schallgeschwindigkeit](https://www.leifiphysik.de/akustik/schallgeschwindigkeit/versuche/messung-der-schallgeschwindigkeit-smartphone-experiment-mit-phyphox)
 
 
 ---
@@ -105,14 +135,15 @@ $\Delta t_{A} - \Delta t_{B} =  \frac{2 d}{V} $
 ---
 
 ## Phet
-![phet](./figs/phet.png)
+<img src="./figs/phet.png" alt="図形が表示できません" border="0"
+width="300"  />
 
-
----
-
-## 注意
-* スマートフォンからブラウザで検索してアクセスしてください。
+#### 注意
 * アプリだと有料になります(120円)
+* ブラウザで検索してアクセスすれば、無料で
+
+
+
 
 
 ---
@@ -144,3 +175,7 @@ $\Delta t_{A} - \Delta t_{B} =  \frac{2 d}{V} $
 
 ---
 
+## 授業でより効果的に使うために
+* ただ「遊ばせる」だけでは効果が少ない
+* センサーやシミュレーションのどこに注目してもらいたいか、どういう手順で示すかがカギ
+* これらの教材の実践例はあまりない。サークル等でぜひ、情報交換をしましょう！
