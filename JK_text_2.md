@@ -193,5 +193,4 @@ width="300"  />
 * センサーやシミュレーションのどこに注目してもらいたいか、どういう手順で示すかがカギ
 * これらの教材の実践例はあまりない。サークル等でぜひ、情報交換をしましょう！
 
-* [YPC](https://www2.hamajima.co.jp/~tenjin/index.htm)
-![](../JK2021_sp/2021-09-26-11-42-33.png)
+* [横浜物理サークル(YPC)](https://www2.hamajima.co.jp/~tenjin/index.htm)
